@@ -1,0 +1,8 @@
+# Ignore JetBrains IDE project files
+.idea/
+
+# Ignore test results directory
+test-results/
+
+# Ignore Python cache files
+tests/__pycache__/
