@@ -16,13 +16,13 @@ class TestLogin:
         "username, password, expected_error",
         [
             (
-                    Users.STANDARD_USER.value["username"],
-                    "secret_sauce1",
+                    Users.STANDARD_USER.USERNAME,
+                    Users.UNREGISTERED_USER.PASSWORD,
                     "Epic sadface: Username and password do not match any user in this service",
             ),
             (
-                    Users.LOCKED_OUT_USER.value["username"],
-                    "secret_sauce",
+                    Users.LOCKED_OUT_USER.USERNAME,
+                    Users.LOCKED_OUT_USER.PASSWORD,
                     "Epic sadface: Sorry, this user has been locked out.",
             ),
         ],

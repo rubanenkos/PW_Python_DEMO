@@ -21,3 +21,17 @@ class Users(Enum):
         "username": "locked_out_user",
         "password": "secret_sauce",
     }
+
+
+    @property
+    def TITLE(self):
+        return self.value["title"]
+
+    @property
+    def USERNAME(self):
+        return self.value["username"]
+
+    @property
+    def PASSWORD(self):
+        return self.value["password"]
+
