@@ -7,3 +7,6 @@ test-results/
 
 # Ignore Python cache files
 tests/__pycache__/
+
+# Ignore Allure report
+allure-report/
