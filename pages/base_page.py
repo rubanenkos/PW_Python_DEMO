@@ -4,9 +4,9 @@ from typing import Literal
 
 
 class BasePage:
-    def __init__(self, page: Page, base_url: str):
+    base_url = None
+    def __init__(self, page: Page):
         self.page = page
-        self.base_url = base_url
 
     def navigate(self, url: str="",
                  wait_until:Literal['commit', 'domcontentloaded', 'load', 'networkidle'] = 'networkidle' ) -> None:
