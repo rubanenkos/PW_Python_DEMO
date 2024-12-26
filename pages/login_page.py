@@ -13,7 +13,8 @@ class LoginPage(BasePage):
 
     def login(self, user: Users):
         user_data = user.value
-        with allure.step(f"Login as a user: '{user_data["username"]}'"):
+        with allure.step("Login"):
+        # with allure.step(f"Login as a user: '{user_data["username"]}'"):
             self.fill_name_field(user_data["username"])
             self.fill_password_field(user_data["password"])
             self.click_login_button()
