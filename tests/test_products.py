@@ -11,6 +11,6 @@ class TestProducts:
         cart_page.check_is_purchase_in_cart(product_name)
         cart_page.check_is_purchase_has_correct_price(product_name, product_price)
 
-
+# TODO: Add extra test here
 
 
